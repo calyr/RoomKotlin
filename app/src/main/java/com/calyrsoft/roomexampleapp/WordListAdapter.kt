@@ -30,4 +30,9 @@ class WordListAdapter internal constructor(
         val current = words[position]
         holder.wordItemView.text = current.word
     }
+
+    internal fun setWords(words: List<Word>) {
+        this.words = words
+        notifyDataSetChanged()
+    }
 }

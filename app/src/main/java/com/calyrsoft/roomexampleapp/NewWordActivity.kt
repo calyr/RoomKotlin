@@ -24,13 +24,13 @@ class NewWordActivity : AppCompatActivity() {
                 setResult(Activity.RESULT_CANCELED, replyIntent)
             } else {
                 val word = editWordView.text.toString()
-                replyIntent.putExtra(EXTRA_REPLAY, word)
+                replyIntent.putExtra(EXTRA_REPLY, word)
                 setResult(Activity.RESULT_OK, replyIntent)
             }
             finish()
         }
     }
     companion object {
-        const val EXTRA_REPLAY = "con.calyrsoftware.android.wordlistsql.REPLY"
+        const val EXTRA_REPLY = "con.calyrsoftware.android.wordlistsql.REPLY"
     }
 }
